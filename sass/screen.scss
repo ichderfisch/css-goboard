@@ -32,13 +32,13 @@ html, body {
 	margin: 0 auto;
 }
 
-.bg {
+.board {
 	height: $board-size;
 	width: $board-size;
 	margin: 0 auto;
 }
 
-.bg-1 {
+.board-19 {
 	background: burlywood;
 	background-image: linear-gradient(black $line, transparent 0),
 					  linear-gradient(90deg, black $line, transparent 0),
