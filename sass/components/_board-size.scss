@@ -1,0 +1,38 @@
+// Measurements
+
+// TODO: Edit grid measurements to: 22em * 23.7em (width * height)
+$grid-width: 2.2em;
+$grid-height: 2.2em;
+
+$line: .1em;
+$board-margin: 1.5em;
+
+// TODO: Star-Point placing needs a minor fix.
+$star-point: $line * 3;
+
+@mixin board-measurements($board-size,$star) {
+	width: $grid-width * $board-size + .1em;
+ 	height: $grid-height * $board-size + .1em;
+	 
+	$star-point-vertical-grid: $grid-height * $star;
+	$star-point-horizontal-grid: $grid-width * $star;	
+
+	background-size: $grid-width $grid-width, 
+					 $grid-height $grid-height,
+					 $star-point-vertical-grid $star-point-vertical-grid;
+					 
+	border-style: solid;
+	border-width: $board-margin;
+}
+
+.board-19 {
+	@include board-measurements(18,6);
+}
+
+.board-13 {
+	@include board-measurements(12,6);
+}
+
+.board-9 {
+	@include board-measurements(8,4);
+}

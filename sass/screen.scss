@@ -4,50 +4,13 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "components/_board-size.scss";
+@import "components/_colors.scss";
 
-// Change 
-$base-size: 2px;
-
-// TODO: Edit grid measurements to: 22em * 23.7em (width * height)
-$grid-size: 22em;
-
-$board-size: $grid-size * 18 + 1em;
-
-$board-margin: 10em;
-
-$line: 1em;
-
-// TODO: Star-Point placing needs a minor fix.
-$star-point: $line * 3;
-$star-point-grid-size: $grid-size * 6 + 0.2em;
+// Variables
+$base-size: 10px;
 
 html, body {
 	height: 100%;
 	font-size: $base-size;
-} 
-
-.wrap {
-	height: 100%;
-	width: auto;
-	margin: 0 auto;
-}
-
-.board {
-	height: $board-size;
-	width: $board-size;
-	margin: 0 auto;
-}
-
-.board-19 {
-	background: burlywood;
-	background-image: linear-gradient(black $line, transparent 0),
-					  linear-gradient(90deg, black $line, transparent 0),
-					  radial-gradient(black $star-point, transparent 0);
-					  
-	background-size: $grid-size $grid-size, 
-					 $grid-size $grid-size,
-					 $star-point-grid-size $star-point-grid-size;
-
-	border: 10em solid burlywood;
-	background-clip: padding-box;
 }

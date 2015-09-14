@@ -1,0 +1,26 @@
+// Color Themes
+$board-color-default: burlywood;
+$line-color-default: black;
+
+$board-color-white: white;
+$line-color-white: black;
+
+
+@mixin board($board-color, $line-color) {
+	background-color: $board-color;
+	
+	background-image: linear-gradient($line-color $line, transparent 0),
+					  linear-gradient(90deg, $line-color $line, transparent 0),
+					  radial-gradient($line-color $star-point, transparent 0);
+		
+	border-color: $board-color;
+	margin: 0 auto;
+}
+
+.board-default {
+	@include board($board-color-default,$line-color-default);
+}
+
+.board-white {
+	@include board($board-color-white,$line-color-white);
+}

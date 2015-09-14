@@ -1,1 +1,102 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}html,body{height:100%;font-size:2px}.wrap{height:100%;width:auto;margin:0 auto}.board{height:397em;width:397em;margin:0 auto}.board-19{background:burlywood;background-image:linear-gradient(#000 1em, transparent 0),linear-gradient(90deg, #000 1em, transparent 0),radial-gradient(#000000 3em,rgba(0,0,0,0) 0%);background-size:22em 22em,22em 22em,132.2em 132.2em;border:10em solid burlywood;background-clip:padding-box}
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.board-19 {
+  width: 39.7em;
+  height: 39.7em;
+  background-size: 2.2em 2.2em, 2.2em 2.2em, 13.2em 13.2em;
+  border-style: solid;
+  border-width: 1.5em;
+}
+
+.board-13 {
+  width: 26.5em;
+  height: 26.5em;
+  background-size: 2.2em 2.2em, 2.2em 2.2em, 13.2em 13.2em;
+  border-style: solid;
+  border-width: 1.5em;
+}
+
+.board-9 {
+  width: 17.7em;
+  height: 17.7em;
+  background-size: 2.2em 2.2em, 2.2em 2.2em, 8.8em 8.8em;
+  border-style: solid;
+  border-width: 1.5em;
+}
+
+.board-default {
+  background-color: burlywood;
+  background-image: linear-gradient(black 0.1em, transparent 0), linear-gradient(90deg, black 0.1em, transparent 0), radial-gradient(#000000 0.3em, rgba(0, 0, 0, 0) 0%);
+  border-color: burlywood;
+  margin: 0 auto;
+}
+
+.board-white {
+  background-color: white;
+  background-image: linear-gradient(black 0.1em, transparent 0), linear-gradient(90deg, black 0.1em, transparent 0), radial-gradient(#000000 0.3em, rgba(0, 0, 0, 0) 0%);
+  border-color: white;
+  margin: 0 auto;
+}
+
+html, body {
+  height: 100%;
+  font-size: 10px;
+}
