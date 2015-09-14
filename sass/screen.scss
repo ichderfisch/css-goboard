@@ -4,8 +4,8 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "components/_board-size.scss";
-@import "components/_colors.scss";
+@import "components/board-size";
+@import "components/colors";
 
 // Variables
 $base-size: 10px;
