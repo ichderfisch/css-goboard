@@ -2,4 +2,4 @@
 Pure CSS Go-Board
 
 See Example at:
-http://codepen.io/anon/pen/qObjrK
+http://codepen.io/ichderfisch/pen/LGLLqx
